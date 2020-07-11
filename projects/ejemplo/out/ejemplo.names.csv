@@ -1,0 +1,175 @@
+projects/ejemplo/out/ejemplo.elf:10000038 00000004 b contador.9403
+projects/ejemplo/out/ejemplo.elf:1a000568 00000040 t Board_LED_Init
+projects/ejemplo/out/ejemplo.elf:1a0005a8 0000003c t Board_TEC_Init
+projects/ejemplo/out/ejemplo.elf:1a0005e4 0000003c t Board_GPIO_Init
+projects/ejemplo/out/ejemplo.elf:1a000620 00000030 t Board_ADC_Init
+projects/ejemplo/out/ejemplo.elf:1a000650 00000038 t Board_SPI_Init
+projects/ejemplo/out/ejemplo.elf:1a000688 00000024 t Board_I2C_Init
+projects/ejemplo/out/ejemplo.elf:1a0015b8 00000012 t GpioPorts
+projects/ejemplo/out/ejemplo.elf:1a0015d4 00000008 t GpioButtons
+projects/ejemplo/out/ejemplo.elf:1a0015dc 0000000c t GpioLeds
+projects/ejemplo/out/ejemplo.elf:1a0015e8 00000004 t InitClkStates
+projects/ejemplo/out/ejemplo.elf:1a0015ec 00000074 t pinmuxing
+projects/ejemplo/out/ejemplo.elf:1a0007b0 00000014 t Chip_ADC_GetClockIndex
+projects/ejemplo/out/ejemplo.elf:1a0007c4 00000030 t getClkDiv
+projects/ejemplo/out/ejemplo.elf:1a000888 000000ac t pll_calc_divs
+projects/ejemplo/out/ejemplo.elf:1a000934 00000104 t pll_get_frac
+projects/ejemplo/out/ejemplo.elf:1a000a38 0000004c t Chip_Clock_FindBaseClock
+projects/ejemplo/out/ejemplo.elf:1a000cac 00000022 t Chip_Clock_GetDivRate
+projects/ejemplo/out/ejemplo.elf:1000003c 00000008 b audio_usb_pll_freq
+projects/ejemplo/out/ejemplo.elf:1a00166c 0000006c t periph_to_base
+projects/ejemplo/out/ejemplo.elf:10000000 00000038 d i2c
+projects/ejemplo/out/ejemplo.elf:1a000e98 00000014 t Chip_SSP_GetClockIndex
+projects/ejemplo/out/ejemplo.elf:1a000eac 00000018 t Chip_SSP_GetPeriphClockIndex
+projects/ejemplo/out/ejemplo.elf:1a0016d8 00000048 t InitClkStates
+projects/ejemplo/out/ejemplo.elf:1a0010a0 0000002c t Chip_UART_GetIndex
+projects/ejemplo/out/ejemplo.elf:1a001720 00000008 t UART_BClock
+projects/ejemplo/out/ejemplo.elf:1a001728 00000008 t UART_PClock
+projects/ejemplo/out/ejemplo.elf:1a001734 t __init_array_end
+projects/ejemplo/out/ejemplo.elf:1a001730 b __preinit_array_end
+projects/ejemplo/out/ejemplo.elf:         U Chip_GPIO_ReadPort
+projects/ejemplo/out/ejemplo.elf:1a001730 t __init_array_start
+projects/ejemplo/out/ejemplo.elf:1a001730 b __preinit_array_start
+projects/ejemplo/out/ejemplo.elf:1a000ad0 0000001c T Chip_Clock_GetDividerSource
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W TIMER2_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000190 00000002 W DebugMon_Handler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W RIT_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a080000 A __top_MFlashA512
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W ADCHS_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000114 T __section_table_start
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W FLASH_EEPROM_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W I2C0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0006fc 00000008 T __stdio_init
+projects/ejemplo/out/ejemplo.elf:1a00017c 00000002 W HardFault_Handler
+projects/ejemplo/out/ejemplo.elf:1a000000 A __vectors_start__
+projects/ejemplo/out/ejemplo.elf:1a000868 0000000c T Chip_ADC_SetResolution
+projects/ejemplo/out/ejemplo.elf:1a0003e0 00000024 T SysTick_Handler
+projects/ejemplo/out/ejemplo.elf:1a0004d4 00000002 W initialise_monitor_handles
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W SDIO_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W ATIMER_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000194 00000002 W PendSV_Handler
+projects/ejemplo/out/ejemplo.elf:1a000178 00000002 W NMI_Handler
+projects/ejemplo/out/ejemplo.elf:1a00173c R __exidx_end
+projects/ejemplo/out/ejemplo.elf:1a000150 T __data_section_table_end
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W I2C1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W UART1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GPIO5_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W CAN1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:53ff73a2 A __valid_user_code_checksum
+projects/ejemplo/out/ejemplo.elf:1a00173c R _etext
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W USB1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W I2S0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W TIMER3_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000d50 0000000c T Chip_Clock_GetBaseClocktHz
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W UART0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001b8 00000012 T bss_init
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W SGPIO_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a001244 T __aeabi_uldivmod
+projects/ejemplo/out/ejemplo.elf:10000048 ? _noinit
+projects/ejemplo/out/ejemplo.elf:10000044 00000004 B SystemCoreClock
+projects/ejemplo/out/ejemplo.elf:1a0010cc 00000054 T Chip_UART_Init
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W ADC0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000188 00000002 W UsageFault_Handler
+projects/ejemplo/out/ejemplo.elf:1a000dcc 0000004c T Chip_Clock_GetRate
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GPIO6_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000738 0000006c T Board_SetupClocking
+projects/ejemplo/out/ejemplo.elf:20008000 A __top_RamAHB32
+projects/ejemplo/out/ejemplo.elf:1a001274 000002e2 T __udivmoddi4
+projects/ejemplo/out/ejemplo.elf:1a0015d0 00000004 T ExtRateIn
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W IntDefaultHandler
+projects/ejemplo/out/ejemplo.elf:1a000300 T __CRP_WORD_END__
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GPIO1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W SSP0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a001734 R __exidx_start
+projects/ejemplo/out/ejemplo.elf:1a0002fc 00000004 T CRP_WORD
+projects/ejemplo/out/ejemplo.elf:1a00155c 0000004c T __libc_init_array
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W ADC1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0006d0 0000002c T Board_Init
+projects/ejemplo/out/ejemplo.elf:1a000564 00000002 W _init
+projects/ejemplo/out/ejemplo.elf:1a000114 T __data_section_table
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W RTC_IRQHandler
+projects/ejemplo/out/ejemplo.elf:10000048 B _ebss
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W TIMER0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0004d8 00000088 T Reset_Handler
+projects/ejemplo/out/ejemplo.elf:20010000 A __top_RamAHB_ETB16
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W SPI_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000e60 00000038 T Chip_I2C_SetClockRate
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W LCD_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000a84 0000004c T Chip_Clock_EnableCrystal
+projects/ejemplo/out/ejemplo.elf:10008000 A __top_RamLoc32
+projects/ejemplo/out/ejemplo.elf:1a00019c 0000001a T data_init
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W TIMER1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000e3c 00000024 T Chip_I2C_Init
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W UART2_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000c40 0000006c T Chip_Clock_GetMainPLLHz
+projects/ejemplo/out/ejemplo.elf:1a000300 00000094 T ConfigurarPuertos
+projects/ejemplo/out/ejemplo.elf:1a000ec4 00000012 T Chip_SSP_SetClockRate
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GPIO2_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000d28 00000026 T Chip_Clock_GetBaseClock
+projects/ejemplo/out/ejemplo.elf:10000038 B _bss
+projects/ejemplo/out/ejemplo.elf:1a000834 00000032 T Chip_ADC_SetSampleRate
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W I2S1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000ed8 0000003e T Chip_SSP_SetBitRate
+projects/ejemplo/out/ejemplo.elf:1a000e18 00000002 T Chip_GPIO_Init
+projects/ejemplo/out/ejemplo.elf:1a0015cc 00000004 T OscRateIn
+projects/ejemplo/out/ejemplo.elf:10000048 ? _end_noinit
+projects/ejemplo/out/ejemplo.elf:10008000 A _vStackTop
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W SSP1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000178 T __bss_section_table_end
+projects/ejemplo/out/ejemplo.elf:1a001558 00000002 W __aeabi_ldiv0
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W USB0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GPIO3_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W SCT_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000394 0000004c T ConfigurarInterrupcion
+projects/ejemplo/out/ejemplo.elf:1a000aec 0000001c T Chip_Clock_GetDividerDivisor
+projects/ejemplo/out/ejemplo.elf:1a0002fc T __CRP_WORD_START__
+projects/ejemplo/out/ejemplo.elf:1a0015a8 00000010 T memset
+projects/ejemplo/out/ejemplo.elf:1a000180 00000002 W MemManage_Handler
+projects/ejemplo/out/ejemplo.elf:1a000404 000000d0 T main
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W WDT_IRQHandler
+projects/ejemplo/out/ejemplo.elf:2000c000 A __top_RamAHB16
+projects/ejemplo/out/ejemplo.elf:1008a000 A __top_RamLoc40
+projects/ejemplo/out/ejemplo.elf:1a00018c 00000002 W SVC_Handler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GPIO7_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000d5c 0000003c T Chip_Clock_EnableOpts
+projects/ejemplo/out/ejemplo.elf:1a000b08 000000b8 T Chip_Clock_GetClockInputHz
+projects/ejemplo/out/ejemplo.elf:1a000bc0 00000080 T Chip_Clock_CalcMainPLLValue
+projects/ejemplo/out/ejemplo.elf:1a001204 00000040 T SystemInit
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W SPIFI_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W QEI_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000150 T __bss_section_table
+projects/ejemplo/out/ejemplo.elf:1a000560 00000002 W _fini
+projects/ejemplo/out/ejemplo.elf:1a0007f4 00000040 T Chip_ADC_Init
+projects/ejemplo/out/ejemplo.elf:1a000704 00000034 T Board_SetupMuxing
+projects/ejemplo/out/ejemplo.elf:1a001120 000000e4 T Chip_UART_SetBaudFDR
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W ETH_IRQHandler
+projects/ejemplo/out/ejemplo.elf:10000000 ? _end_uninit_RESERVED
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W CAN0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:10000000 D _data
+projects/ejemplo/out/ejemplo.elf:10000048 B _pvHeapStart
+projects/ejemplo/out/ejemplo.elf:1a000178 T __section_table_end
+projects/ejemplo/out/ejemplo.elf:1a000f18 00000038 T Chip_SSP_Init
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GINT0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W DAC_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0006ac 00000024 T Board_Debug_Init
+projects/ejemplo/out/ejemplo.elf:10000038 D _edata
+projects/ejemplo/out/ejemplo.elf:1a000e1c 00000020 T Chip_I2C_EventHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W M0SUB_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000f50 00000150 T Chip_SetupCoreClock
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GPIO0_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000000 00000040 T g_pfnVectors
+projects/ejemplo/out/ejemplo.elf:1a000874 00000014 T SystemCoreClockUpdate
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W DMA_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W EVRT_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1b080000 A __top_MFlashB512
+projects/ejemplo/out/ejemplo.elf:1a001558 00000002 W __aeabi_idiv0
+projects/ejemplo/out/ejemplo.elf:1a000184 00000002 W BusFault_Handler
+projects/ejemplo/out/ejemplo.elf:1a000d98 00000034 T Chip_Clock_Enable
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W UART3_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W MCPWM_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W M0APP_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000040 000000d4 T g_pfnVendorVectors
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GINT1_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a000cd0 00000058 T Chip_Clock_SetBaseClock
+projects/ejemplo/out/ejemplo.elf:1a0001cc 00000002 W GPIO4_IRQHandler
+projects/ejemplo/out/ejemplo.elf:1a0007a4 0000000c T Board_SystemInit
