@@ -20,5 +20,5 @@
 # Project path
 PROJECT_PATH = projects
 # Project name
-PROJECT_NAME = ejemplo
+PROJECT_NAME = reloj
 
