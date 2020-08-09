@@ -1,7 +1,8 @@
 
 
 #include "reloj.h"
-#include "lcd.h"
+#include "display_lcd.h"
+#include <string.h>
 
 #ifndef CPU
 #error CPU shall be defined
@@ -38,19 +39,19 @@
 #define SW6_GPIO_MASK   (1UL << SW6_GPIO_PIN)
 #define SW_GPIO_MASK    (FUN_GPIO_MASK | SW5_GPIO_MASK | SW6_GPIO_MASK)
 
-#define LCD_HORAS_DECENA    0
-#define LCD_HORAS_UNIDAD    (LCD_HORAS_DECENA+1)
-#define LCD_MINUTOS_DECENA  (LCD_HORAS_UNIDAD+2)
-#define LCD_MINUTOS_UNIDAD  (LCD_MINUTOS_DECENA+1)
-#define LCD_SEGUNDOS_DECENA (LCD_MINUTOS_UNIDAD+2)
-#define LCD_SEGUNDOS_UNIDAD (LCD_SEGUNDOS_DECENA+1)
-
-
 
 static uint8_t cuenta = 0;
 static uint8_t cambios = 1;
 static char cadena[9] = "00:00:00";
-   
+
+struct hora_s{
+    uint8_t hora;
+    uint8_t minuto;
+    uint8_t segundo;
+};
+static struct hora_s hora_actual = {0};
+
+
 void ConfigurarPuertosPoncho(void) {
 
    /* Configuracion Teclas Poncho - Puerto Teclas 1 a 4 */
@@ -79,7 +80,7 @@ void ConfigurarPuertosPoncho(void) {
    Chip_GPIO_SetDir(LPC_GPIO_PORT, 2, 0x100, 1);
    Chip_GPIO_SetDir(LPC_GPIO_PORT, 3, 0xF8, 1);
 
-   lcdInicializar();
+   inicializar_display();
 
    /* Puerto Leds RGB */
    Chip_SCU_PinMux(1, 3, SCU_MODE_SAL, SCU_MODE_FUNC0);
@@ -122,20 +123,53 @@ void SysTick_Handler(void) {
    if (contador%1000 == 0){
        cambios = 1;
        cuenta = (cuenta +1)%10;
-       if(cadena[LCD_SEGUNDOS_UNIDAD] == 57){
-             cadena[LCD_SEGUNDOS_UNIDAD] = (char)48;
-         }else{
-             cadena[LCD_SEGUNDOS_UNIDAD]++;
-         }
+       contar_tiempo();
    }
    if(contador >= 1000){
        contador = 0;
    }
 }
 
+void contar_tiempo(void){
+    if (hora_actual.segundo < 59){
+        hora_actual.segundo++;
+        cadena[6] = hora_actual.segundo/10 + '0';
+        cadena[7] = hora_actual.segundo%10 + '0';
+    }else if (hora_actual.minuto < 59){
+        hora_actual.segundo = 0;
+        hora_actual.minuto++;
+        cadena[3] = hora_actual.minuto/10 + '0';
+        cadena[4] = hora_actual.minuto%10 + '0';
+        cadena[6] = '0';
+        cadena[7] = '0';
+    }else if (hora_actual.hora < 23){
+        hora_actual.segundo = 0;
+        hora_actual.minuto = 0;
+        hora_actual.hora++;
+        cadena[0] = hora_actual.hora/10 + '0';
+        cadena[1] = hora_actual.hora%10 + '0';
+        cadena[3] = '0';
+        cadena[4] = '0';
+        cadena[6] = '0';
+        cadena[7] = '0';
+    }else{
+        hora_actual.segundo = 0;
+        hora_actual.minuto = 0;
+        hora_actual.hora = 0;
+        strcpy(cadena,"00:00:00");
+    }
+}
+
 
 int main(void)
 {
+    hora_actual.hora = 23;
+    hora_actual.minuto = 59;
+    hora_actual.segundo = 50;
+    strcpy(cadena, "23:59:50");
+    contar_tiempo();
+
+
    ConfigurarPuertosPoncho();
    ConfigurarInterrupcion();
 
@@ -146,9 +180,8 @@ int main(void)
    static uint8_t anterior = 0;
    uint8_t actual;
    
-   lcdEscribirCadena("     EMBOLE DE    ");
-   lcdCursor(1,0);
-   lcdEscribirCadena("      LAUTARO     ");
+   escribir_fila(0,"EITI          2020");
+   escribir_fila(1,"             RELOJ");
 
    while (1) {
       actual = Leer_Teclas();
@@ -174,9 +207,9 @@ int main(void)
          anterior = actual;
       }
      if(cambios){
-         lcdCursor(1,0);
-         
-         lcdEscribirCadena(cadena);         
+         //lcdCursor(1,0);
+         //lcdEscribirCadena(cadena);    
+         escribir_fila(INFERIOR,cadena);     
          cambios = 0;
      }
    }
