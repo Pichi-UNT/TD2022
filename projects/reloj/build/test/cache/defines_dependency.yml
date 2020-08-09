@@ -1,0 +1,11 @@
+---
+src/reloj.c:
+- TEST
+"../../projects/reloj/build/temp/_test_reloj.c":
+- TEST
+build/test/mocks/mock_lcd.c:
+- TEST
+build/test/mocks/mock_config.c:
+- TEST
+build/test/mocks/mock_chip.c:
+- TEST

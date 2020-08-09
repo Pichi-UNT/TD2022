@@ -1,0 +1,4 @@
+---
+- "/home/estudiante/proyectos/embebidos/embebidos.entorno/projects/reloj/vendor/ceedling/vendor/unity/src/unity.h"
+- mock_lcd.h
+- build/temp/_test_lcd.c
