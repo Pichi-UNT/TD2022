@@ -1,4 +1,6 @@
 
-void ConfigurarPuertosPoncho(void);
+#include "configuracion.h"
+#include "display_lcd.h"
 
-void ConfigurarInterrupcion(void);
+
+typedef struct hora_s * hora_t;
