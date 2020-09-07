@@ -20,5 +20,5 @@
 # Project path
 PROJECT_PATH = projects
 # Project name
-PROJECT_NAME = reloj
+PROJECT_NAME = lab1
 
